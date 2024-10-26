@@ -1,0 +1,19 @@
+footer{
+    box-shadow: 1px 7px 22px 0px rgba(0,0,0,0.75);;
+    padding: 20px;
+    width: 100%;
+    color: white;
+    background-color: var(--theme);
+
+}
+.footer-img{
+    height: 18px;
+    width: 155px;
+
+}
+
+.footer-text{
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,1 +1,213 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+@import url('../node_modules/@fortawesome/fontawesome-free/css/all.css');
+ :root{
+  --theme:#50703f;
+ }
+*{
+    font-family: "Arima", system-ui;
+    box-sizing: border-box;
+}
+
+.btn-theme{
+   padding: 5px 10px;
+   background-color: var(--theme);
+   color: white;
+   border: 1px solid var(--theme);
+   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.btn-theme:hover{
+   background-color: white;
+   color:var(--theme);
+}
+
+.btn-outline-theme{
+  padding: 5px 10px;
+  background-color: white;
+  color:var(--theme);
+  border: 1px solid var(--theme);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-outline-theme:hover{
+  background-color: var(--theme);
+  color:white
+}
+.nav-logo{
+width: 120px;
+}
+.hero-section{
+  height: calc(100vh - 74px);
+}
+
+.hero-section{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url('../public/hero-sec-bg.png');
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-title {
+    position: relative;
+    display: inline-block;
+  }
+
+  .sec-img{
+    width: 300px;
+    height: 300px;
+
+  }
+
+  .aboutus-list li{
+    line-height: 60px;
+    transform: translateY(5px);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .aboutus-img {
+    animation: bounce 2s infinite ease; /* Added a duration of 2s for a smoother bounce */
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-30px); /* Moving the image up slightly */
+    }
+    100% {
+      transform: translateY(0px); /* Returning to the original position */
+    }
+  }
+
+
+
+  .about-us-section ul li:hover{
+    transform: translateY(-5px);
+  }
+  .sec-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    height: 4px; 
+    width: 0;
+    background-color: rgb(80, 112, 63); /* Adjust the color of the underline */
+    transition: width 0.3s ease-in-out; /* Animation duration and easing */
+  }
+  
+  .sec:hover .sec-title::after {
+    width: 100%; /* Expands the underline to full width on hover */
+  }
+.hero-text{
+    width: 500px;
+    color: rgb(234, 234, 234);
+}
+.hero-text h1{
+    font-size: 50px;
+}
+
+
+/* SERVICES */
+.services-section{
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(50, 142, 0, 0.4)),url('../public/bg1.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.service_card {
+  margin: 25px 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  transition: 0.25s ease-in-out;
+  border-radius: 20px;
+}
+
+.service_card_img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.service_card_img img {
+  height: 250px;
+  width: 100%;
+  transition: 0.25s all;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+}
+
+.service_card_img img:hover {
+  transform: translateY(-3%);
+}
+
+.service_card_content {
+  padding: 16px;
+  text-align: center;
+}
+.service_card_content .title{
+  font-size: 28px;
+}
+
+.service_card_content .subtitle{
+  color: gray;
+  font-size: 20px;
+}
+.service_card_content h3 {
+  font-size: 18px;
+  color: var(--theme);
+}
+
+.service_card_content p {
+  text-align: justify;
+}
+
+.service_card_footer {
+  padding: 10px 0px;
+  margin: 16px;
+}
+
+.service_card_footer a {
+  text-decoration: none;
+  margin: 0 10px 0 0;
+  text-transform: uppercase;
+  color: #f96332;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.service_card:hover {
+  transform: scale(1.025);
+  border-radius: 0.375rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.25);
+}
+
+.service_card:hover .service_card_img img {
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+
+.service_card_content h3 {
+  font-weight: 600;
+}
+
+
+.count-section{
+  background-color: #50703f;
+}
+.counter{
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+
